@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+    --dark-blue: #2C5C6B;
+    --light-blue: #7DDFD2;
+    --light-green: #7ED64B;
+    --dark-green: #4E978D;
+    --light-pink: #ECB3CB;
+    --dark-pink: #E55B87;
+    --light-orange: #F09E2D;
+    --dark-orange: #E64A1D;
+    --black: #000000;
+    --white: #F1F1DA;
+    --yellow: #FAC92B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-block: 1rem;
+}
+
+h4, h5, h6 {
+    font-size: 1rem;
+}
+  
+
+body {
+    background-color: #f5f5f5;
+}

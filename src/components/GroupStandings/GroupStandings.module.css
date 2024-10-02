@@ -1,0 +1,81 @@
+.group_standings {
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    max-width: 1000px;
+    margin-block: 1rem;
+    /* border: 2px solid #838383; */
+    margin-inline: auto;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px #ccc;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.table tr {
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.table th {
+    background-color: #e4e4e4;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.table td {
+    text-align: center;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table img {
+    width: 40px;
+    height: 40px;
+    clip-path: circle(50% at 50% 50%);
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    /* z-index: -1 ; */
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* Foi preciso especificar a tag table para que o css funcionasse */
+table .table_column_selecao { 
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+table .table_column_position {
+    padding-inline: 0.5rem;
+    color: #2C5C6B;
+    font-weight: bold;
+}
+
+.div_select {
+    text-align: center;
+}
+
+.div_select select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2C5C6B;
+}

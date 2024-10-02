@@ -1,0 +1,14 @@
+.cards {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.knockout_table {
+    max-width: 1000px;
+    margin: auto;
+}
