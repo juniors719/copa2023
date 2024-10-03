@@ -71,3 +71,49 @@
     font-size: 1.75rem;
     padding-inline: 0.1rem;
 }
+
+.selecao_sigla {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .table {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .game_table {
+        width: 100%;
+    }
+
+    .table {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .table_column_mandante img,
+    .table_column_visitante img {
+        width: 30px;
+        height: 30px;
+        /* order: 1; */
+    }
+
+    .table_column_gols {
+        font-size: 1.5rem;
+        padding-inline: 0;
+    }
+    
+    .table tr {
+        height: 80px;
+    }
+
+    .selecao_sigla {
+        display: block;
+    }
+
+    .selecao_nome {
+        display: none;
+    }
+}

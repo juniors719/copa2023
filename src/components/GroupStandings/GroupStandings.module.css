@@ -51,6 +51,10 @@
     -o-border-radius: 50%;
 }
 
+.table_column_nome {
+    width: 400px;
+}
+
 /* Foi preciso especificar a tag table para que o css funcionasse */
 table .table_column_selecao { 
     display: flex;
@@ -79,3 +83,30 @@ table .table_column_position {
     font-weight: bold;
     color: #2C5C6B;
 }
+
+.selecao_sigla {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .table {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    .selecao_sigla {
+        display: block;
+    }
+
+    .selecao_nome {
+        display: none;
+    }
+
+    .table_column_nome {
+        width: 100px;
+    }
+}
+
+
+

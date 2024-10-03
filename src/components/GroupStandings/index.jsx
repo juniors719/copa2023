@@ -55,13 +55,13 @@ const GroupStandings = () => {
                     <tr>
                         <th>#</th>
                         <th>Seleção</th>
-                        <th>Pontos</th>
-                        <th>Vitórias</th>
-                        <th>Empates</th>
-                        <th>Derrotas</th>
-                        <th>Gols Pró</th>
-                        <th>Gols Contra</th>
-                        <th>Saldo de Gols</th>
+                        <th>Pts</th>
+                        <th>V</th>
+                        <th>E</th>
+                        <th>D</th>
+                        <th>GP</th>
+                        <th>GC</th>
+                        <th>SG</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -81,7 +81,7 @@ const GroupStandings = () => {
                                     >
                                         {grupo.posicao}
                                     </td>
-                                    <td style={{ width: 400 }}>
+                                    <td className={styles.table_column_nome}>
                                         <span
                                             className={
                                                 styles.table_column_selecao
@@ -99,7 +99,16 @@ const GroupStandings = () => {
                                                     alt={grupo.selecao}
                                                 />
                                             )}
-                                            {grupo.selecao}
+                                            <span
+                                                className={styles.selecao_nome}
+                                            >
+                                                {selecao.selecao}
+                                            </span>
+                                            <span
+                                                className={styles.selecao_sigla}
+                                            >
+                                                {selecao.imagem.toUpperCase()}
+                                            </span>
                                         </span>
                                     </td>
                                     <td>{grupo.pontos}</td>

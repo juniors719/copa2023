@@ -28,55 +28,73 @@ const GameTable = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {jogos.map((jogo) => (
-                        <tr key={jogo.jogo}>
-                            <td className={styles.table_column_dia}>
-                                {jogo.dia}
-                            </td>
-                            <td className={styles.table_column_data}>
-                                {jogo.data}
-                            </td>
-                            <td className={styles.table_column_hora}>
-                                {jogo.hora}
-                            </td>
-                            <td className={styles.table_column_grupo}>
-                                {jogo.grupo}
-                            </td>
-                            <td>
-                                <span className={styles.table_column_mandante}>
-                                    <span>{jogo.mandante}</span>
-                                    <img
-                                        src={
-                                            "/bandeiras/" +
-                                            jogo.sigla_mandante.toLowerCase() +
-                                            ".svg"
+                    {jogos.map((jogo) => {
+                        return (
+                            <tr key={jogo.jogo}>
+                                <td className={styles.table_column_dia}>
+                                    {jogo.dia}
+                                </td>
+                                <td className={styles.table_column_data}>
+                                    {jogo.data}
+                                </td>
+                                <td className={styles.table_column_hora}>
+                                    {jogo.hora}
+                                </td>
+                                <td className={styles.table_column_grupo}>
+                                    {jogo.grupo}
+                                </td>
+                                <td>
+                                    <span
+                                        className={styles.table_column_mandante}
+                                    >
+                                        <span className={styles.selecao_sigla}>
+                                            {jogo.sigla_mandante}
+                                        </span>
+                                        <span className={styles.selecao_nome}>
+                                            {jogo.mandante}
+                                        </span>
+                                        <img
+                                            src={
+                                                "/bandeiras/" +
+                                                jogo.sigla_mandante.toLowerCase() +
+                                                ".svg"
+                                            }
+                                            alt={jogo.mandante}
+                                        />
+                                    </span>
+                                </td>
+                                <td className={styles.table_column_gols}>
+                                    {jogo.gols_mandante}
+                                </td>
+                                <td className={styles.table_column_x}>x</td>
+                                <td className={styles.table_column_gols}>
+                                    {jogo.gols_visitante}
+                                </td>
+                                <td>
+                                    <span
+                                        className={
+                                            styles.table_column_visitante
                                         }
-                                        alt={jogo.mandante}
-                                    />
-                                </span>
-                            </td>
-                            <td className={styles.table_column_gols}>
-                                {jogo.gols_mandante}
-                            </td>
-                            <td className={styles.table_column_x}>x</td>
-                            <td className={styles.table_column_gols}>
-                                {jogo.gols_visitante}
-                            </td>
-                            <td>
-                                <span className={styles.table_column_visitante}>
-                                    <img
-                                        src={
-                                            "/bandeiras/" +
-                                            jogo.sigla_visitante.toLowerCase() +
-                                            ".svg"
-                                        }
-                                        alt={jogo.visitante}
-                                    />
-                                    <span>{jogo.visitante}</span>
-                                </span>
-                            </td>
-                        </tr>
-                    ))}
+                                    >
+                                        <img
+                                            src={
+                                                "/bandeiras/" +
+                                                jogo.sigla_visitante.toLowerCase() +
+                                                ".svg"
+                                            }
+                                            alt={jogo.visitante}
+                                        />
+                                        <span className={styles.selecao_nome}>
+                                            {jogo.visitante}
+                                        </span>
+                                        <span className={styles.selecao_sigla}>
+                                            {jogo.sigla_visitante}
+                                        </span>
+                                    </span>
+                                </td>
+                            </tr>
+                        );
+                    })}
                 </tbody>
             </table>
         </section>
