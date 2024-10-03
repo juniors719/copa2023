@@ -48,4 +48,8 @@
     .card {
         width: 45%;
     }
+
+    .card span {
+        font-size: 0.75rem;
+    }
 }
