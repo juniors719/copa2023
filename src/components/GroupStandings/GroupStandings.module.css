@@ -31,6 +31,7 @@
 
 .table td {
     text-align: center;
+    width: 7%;
 }
 
 .table tr:nth-child(even) {
@@ -52,7 +53,7 @@
 }
 
 .table_column_nome {
-    width: 400px;
+    min-width: 600px;
 }
 
 /* Foi preciso especificar a tag table para que o css funcionasse */
@@ -65,7 +66,7 @@ table .table_column_selecao {
 }
 
 table .table_column_position {
-    padding-inline: 0.5rem;
+    padding-inline: 0.2rem;
     color: #2C5C6B;
     font-weight: bold;
 }
@@ -91,6 +92,14 @@ table .table_column_position {
 @media (max-width: 768px) {
     .table {
         width: 90%;
+    }
+
+    .table td {
+        width: 5%;
+    }
+
+    .table_column_nome {
+        min-width: 100px;
     }
 }
 

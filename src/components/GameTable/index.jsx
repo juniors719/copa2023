@@ -20,7 +20,6 @@ const GameTable = () => {
             <table className={styles.table}>
                 <thead>
                     <tr>
-                        <th>Dia</th>
                         <th>Data</th>
                         <th>Horário</th>
                         <th>Grupo</th>
@@ -31,9 +30,6 @@ const GameTable = () => {
                     {jogos.map((jogo) => {
                         return (
                             <tr key={jogo.jogo}>
-                                <td className={styles.table_column_dia}>
-                                    {jogo.dia}
-                                </td>
                                 <td className={styles.table_column_data}>
                                     {jogo.data}
                                 </td>

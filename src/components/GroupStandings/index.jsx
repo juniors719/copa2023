@@ -23,7 +23,6 @@ const GroupStandings = () => {
             const grupos = await response.json();
             const todasSelecoes = grupos.flatMap((grupo) => grupo.selecoes);
             setSelecoes(todasSelecoes);
-            console.log(todasSelecoes); // Se quiser verificar o resultado
         };
         fetchSelecoes();
     }, []);
@@ -54,7 +53,7 @@ const GroupStandings = () => {
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Seleção</th>
+                        <th className={styles.table_column_maior}>Seleção</th>
                         <th>Pts</th>
                         <th>V</th>
                         <th>E</th>
@@ -73,7 +72,6 @@ const GroupStandings = () => {
                                     selecao.selecao.toLowerCase() ===
                                     grupo.selecao.toLowerCase()
                             );
-                            console.log(selecao); // Se quiser verificar o resultado
                             return (
                                 <tr key={grupo.selecao}>
                                     <td
