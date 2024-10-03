@@ -34,7 +34,12 @@ function KnockoutStage({ fase }) {
                         </h3>
                         <h3 className={styles.placar}>
                             <div className={styles.mandante_box}>
-                                {jogo.mandante}
+                                <span className={styles.selecao_nome}>
+                                    {jogo.mandante}
+                                </span>
+                                <span className={styles.selecao_sigla}>
+                                    {jogo.sigla_mandante}
+                                </span>
                                 <img
                                     src={`/bandeiras/${jogo.sigla_mandante.toLowerCase()}.svg`}
                                     alt="{jogo.mandante}"
@@ -54,7 +59,12 @@ function KnockoutStage({ fase }) {
                                     src={`/bandeiras/${jogo.sigla_visitante.toLowerCase()}.svg`}
                                     alt="{jogo.visitante}"
                                 />
-                                {jogo.visitante}
+                                <span className={styles.selecao_nome}>
+                                    {jogo.visitante}
+                                </span>
+                                <span className={styles.selecao_sigla}>
+                                    {jogo.sigla_visitante}
+                                </span>
                             </div>
                         </h3>
                         <div className={styles.tempo_extra}>

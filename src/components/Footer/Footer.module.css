@@ -10,7 +10,7 @@
     font-weight: bold;
     bottom: 0;
     margin-top: 50px;
-    /* position: fixed; */
+    position: fixed;
 }
 
 .footer_divcolors {
@@ -63,4 +63,11 @@
 .github_link a {
     text-decoration: none;
     color: #f9f9f9;
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        position: relative;
+    }
+    
 }

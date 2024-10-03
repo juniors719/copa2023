@@ -105,3 +105,25 @@
     flex-direction: column;
     align-items: center;
 }
+
+.selecao_sigla {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .knockout_table {
+        padding: 0 15px;
+    }
+
+    .jogo {
+        padding: 15px;
+    }
+
+    .selecao_sigla {
+        display: block;
+    }
+
+    .selecao_nome {
+        display: none;
+    }
+}
